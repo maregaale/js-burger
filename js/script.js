@@ -4,9 +4,9 @@ var buttonCalculate = document.getElementById('button-calculate');
 var total = document.getElementById('total');
 var ingredients = document.getElementsByClassName("ingredient");
 var sum = 50;
-var couponsList = ["123456", "H7F567", "897945", "458741"]
-// var checkList = document.getElementById('check-list');
-// console.log(checkList);
+var couponsList = ["123456", "H7F567", "897945", "458741"];
+var couponInput = document.getElementById('coupon-input');
+
 
 // aggiungo l'evento al click sul bottone 'sum'
 buttonCalculate.addEventListener( "click",
@@ -20,6 +20,12 @@ buttonCalculate.addEventListener( "click",
         }
       }
 
+      // applico lo sconto dei coupon
+      if (couponsList.includes(couponInput.value)) {
+        sum -= sum * 0.2;
+      }
+
+      console.log(sum);
 
     } else {
       alert("Inserisci il nome del tuo Burger!");
