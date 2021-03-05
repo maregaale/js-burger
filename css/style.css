@@ -10,14 +10,93 @@ body {
   background-color: #fff5e2;
 }
 
+.wrapper {
+  width : 50%;
+  height: 100vh;
+}
+
 header {
   background-color: #fdbb40;
+  height: 15vh;
+  padding: 40px 30px 30px 20px;
+
 }
 
 main {
   background-color: #fff;
+  height: 75vh;
+  padding: 40px 30px 30px 20px;
 }
 
 footer {
   background-color: #d33359;
+  height: 10vh;
+  padding: 20px 30px 30px 10px;
+}
+
+/* Typo */
+h1 {
+  font-weight: bolder;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* main */
+#burger-name-input {
+  font-size: 25px;
+  border: 0;
+  margin-bottom: 30px;
+}
+
+#check-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#check-list li {
+  width: 50%;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+#check-list li img {
+  width: 40px;
+    margin-right: 20px;
+
+}
+
+.ingredient {
+  -webkit-appearance: none;
+	background-color: red;
+	border: 1px solid #cacece;
+  padding: 7px;
+	border-radius: 3px;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.ingredient:focus {
+  outline: none;
+}
+
+.ingredient:checked {
+	background-color: #e9ecee;
+	color: #99a1a7;
+}
+
+.ingredient:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: -9px;
+	left: 3px;
+	color: black;
+  font-size: 25px;
+	left: 0px;
 }
