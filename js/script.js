@@ -19,17 +19,19 @@ buttonCalculate.addEventListener( "click",
           sum += parseInt(ingredients[i].value);
         }
       }
-
       // applico lo sconto dei coupon
       if (couponsList.includes(couponInput.value)) {
         sum -= sum * 0.2;
+        // elimino il coupon utilizzato dalla lista di coupons
+        console.log(couponsList);
+        couponsList.splice(couponsList.indexOf(couponInput.value), 1);
+        console.log(couponsList);
       }
 
-      console.log(sum);
-
+      // stampo il totale
+      total.innerHTML = sum + "	\u20AC";
     } else {
       alert("Inserisci il nome del tuo Burger!");
     }
-
   }
 );
