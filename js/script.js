@@ -1,3 +1,10 @@
 // variabili
 var burgerNameInput = document.getElementById('burger-name-input');
-console.log(burgerNameInput);
+
+// controllo se burgerNameInput è non vuoto o meno
+if (burgerNameInput != " ") {
+  
+} else {
+
+
+}
