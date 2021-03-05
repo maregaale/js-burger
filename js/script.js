@@ -23,9 +23,7 @@ buttonCalculate.addEventListener( "click",
       if (couponsList.includes(couponInput.value)) {
         sum -= sum * 0.2;
         // elimino il coupon utilizzato dalla lista di coupons
-        console.log(couponsList);
         couponsList.splice(couponsList.indexOf(couponInput.value), 1);
-        console.log(couponsList);
       }
 
       // stampo il totale
