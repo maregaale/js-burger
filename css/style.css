@@ -13,25 +13,26 @@ body {
 .wrapper {
   width : 50%;
   height: 100vh;
+  position: relative;
 }
 
 header {
   background-color: #fdbb40;
   height: 15vh;
-  padding: 40px 30px 30px 20px;
+  padding: 40px 50px 30px 50px;
 
 }
 
 main {
   background-color: #fff;
   height: 75vh;
-  padding: 40px 30px 30px 20px;
+  padding: 40px 50px 30px 50px;
 }
 
 footer {
   background-color: #d33359;
   height: 10vh;
-  padding: 20px 30px 30px 10px;
+  padding: 0 50px;
 }
 
 /* Typo */
@@ -48,6 +49,15 @@ h2 {
   font-size: 25px;
   border: 0;
   margin-bottom: 30px;
+  width: 500px;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+#burger-name-input:focus {
+  outline: none;
+  border: 1px solid lightgrey;
 }
 
 #check-list {
@@ -71,6 +81,7 @@ h2 {
 
 }
 
+/* checkboxes */
 .ingredient {
   -webkit-appearance: none;
 	background-color: red;
@@ -99,4 +110,87 @@ h2 {
 	color: black;
   font-size: 25px;
 	left: 0px;
+}
+
+
+/* coupon */
+.coupon-container {
+  margin: 30px 0;
+}
+
+.coupon-container label {
+  font-weight: bold;
+}
+
+#coupon-input {
+  margin-left: 30px;
+  width: 500px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff5e2;
+  border: 0;
+}
+
+#coupon-input:focus {
+  outline: none;
+}
+
+
+
+/* bottone di calcolo */
+.button-container {
+  text-align: center;
+}
+
+#button-calculate {
+  padding: 15px 25px;
+  border-radius: 7px;
+  border: 0;
+  font-weight: bolder;
+  color: black;
+  background-color: #fdbb40;
+}
+
+#button-calculate:active {
+  outline: none;
+  border: 1px solid black;
+}
+
+#button-calculate:focus {
+  outline: none;
+}
+/* /Main */
+
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+footer h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#total {
+  font-size: 30px;
+  font-weight: bolder;
+}
+/* /footer */
+
+/* icona hamburgher */
+.wrapper:after {
+  content: "";
+  background-image: url('../img/burger-top.png');
+  background-size: contain;
+  position: absolute;
+  right: -50px;
+  top: -30px;
+  width: 180px;
+  height: 180px;
+  display: block;
+  background-color: #fdbb40;
+  border-radius: 50%;
 }
