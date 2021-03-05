@@ -1,13 +1,13 @@
 // variabili
 var burgerNameInput = document.getElementById('burger-name-input');
-var sum = document.getElementById('sum');
+var buttonCalculate = document.getElementById('button-calculate');
 
 // aggiungo l'evento al click sul bottone 'sum'
-sum.addEventListener( "click",
+buttonCalculate.addEventListener( "click",
   function () {
     // controllo se burgerNameInput è non vuoto o meno
-    if (burgerNameInput != " ") {
-
+    if (burgerNameInput.value != "") {
+      console.log(burgerNameInput.value);
 
     } else {
       alert("Inserisci il nome del tuo Burger!");
