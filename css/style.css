@@ -90,6 +90,7 @@ h2 {
 	border-radius: 3px;
   vertical-align: bottom;
   position: relative;
+  margin: 0 10px;
 }
 
 .ingredient:focus {
